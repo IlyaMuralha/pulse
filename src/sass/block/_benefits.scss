@@ -16,6 +16,16 @@
     &__icon {
         width: 70px;
         height: 70px;
+        &_animated {
+            animation: heartbeat 2s ease-in infinite;
+            // animation-name: heartbeat;
+            // animation-duration: 2s;
+            // animation-timing-function: ease-in;
+            // animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
     &__subtitle {
         margin-top: 19px;
